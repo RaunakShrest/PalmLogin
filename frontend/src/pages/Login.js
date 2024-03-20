@@ -59,7 +59,7 @@ const history=useHistory()
                 <br></br>
                 
             </form>
-            <button type="submit" className="btn btn-secondary">Reset Password</button>
+      
         </div>
   )
 }

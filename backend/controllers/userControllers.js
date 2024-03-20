@@ -4,27 +4,6 @@ const asyncHandler= require("express-async-handler")
 const generateToken= require("../config/generateToken")
 
 
-
-// const registerUser= async(req,res)=>{
-
-//     const data= await Users.findOne({userName:req.body.userName})
-
-//     if(data){
-//         res.json({
-//             msg:"User already exists",
-//             success:false
-//         })
-//     }else{
-//         const data= await Users.create(req.body)
-//         if(data){
-//             res.json({
-//                 msg:"Register Success",
-//                 success: true,
-//             })
-//         }
-//     }
-// }
-
 const registerUser= asyncHandler(async(req,res)=>{
     const {userName, password}= req.body;
 // console.log(data)
@@ -140,7 +119,7 @@ const getAllUsers = asyncHandler(async (req, res) => {
 
 async function deleteUser(req,res){
     try {
-        console.log(req.params.id, 'User not found');
+        // console.log(req.params.id, 'User not found');
         const deleteById = await Users.findByIdAndDelete(req.params.id)
         res.status(201).json(deleteById)
         
@@ -153,7 +132,7 @@ async function deleteUser(req,res){
 
 async function findByID(req,res){
     try {
-        console.log(req.params.id, 'User not found');
+        // console.log(req.params.id, 'User not found');
         const findByid = await Users.findById(req.params.id)
         res.status(201).json(findByid)
         
