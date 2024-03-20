@@ -1,7 +1,18 @@
 This is a simple Registration and Login form which is created from MERN, jquery and bootstrap.
+Technology Stacks
+- React JS
+- React routerdom
+- UI libraries- BootStrap
+- Mongo DB
+- Express
+- Node JS
+- Rest Api
+- Middlewares
+- Jquery
 
-Features
-Authorization
+
+**Features
+Authorization**
 -  [x] Login 
     - [x] frontend form validation
     - [x] backend validation
